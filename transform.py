@@ -5,11 +5,11 @@ from trans_net import feed_forward
 from utils import load_img, save_img
 import argparse
 
-CONTENT_IMAGE = './images/content/great wall.jpg'
-WEIGHTS_PATH = './weights/wave/weights_wave'
+CONTENT_IMAGE = './images/content/DSC02660.JPG'
+WEIGHTS_PATH = './weights/wave/weights'
 start = CONTENT_IMAGE.rindex('/')
 OUTPUT_NAME = CONTENT_IMAGE[start+1:]
-OUTPUT_NAME = os.path.join('./output', OUTPUT_NAME)
+OUTPUT_NAME = os.path.join('/kaggle/working/', OUTPUT_NAME)
 
 
 def main():

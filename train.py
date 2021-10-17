@@ -86,7 +86,7 @@ class StyleContent(models.Model):
         return {'content': content, 'style': style}
 
 
-def trainer(style_image, dataset_path, weights_path, content_weight, style_weight,
+def trainer(style_image, dataset_path, weights_path, load_weights_path, content_weight, style_weight,
             tv_weight, learning_rate, batch_size, epochs):
     style_layers = ['block1_conv1', 'block2_conv1', 'block3_conv1',
                     'block4_conv1', 'block5_conv1']
@@ -95,7 +95,7 @@ def trainer(style_image, dataset_path, weights_path, content_weight, style_weigh
 
     network = feed_forward()
     # 若中断训练，可重新加载权重
-    # network.load_weights(weights_path).expect_partial()
+    network.load_weights(load_weights_path).expect_partial()
     extractor = StyleContent(style_layers, content_layers)
     style_image = load_img(style_image)
     style_target = extractor(style_image * 255.0)['style']
