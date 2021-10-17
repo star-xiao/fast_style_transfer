@@ -6,7 +6,7 @@ from utils import load_img, save_img
 import argparse
 
 CONTENT_IMAGE = './content/great wall.jpg'
-WEIGHTS_PATH = './weights/wave/weights_wave'
+WEIGHTS_PATH = './weights/wave/weights_udnie'
 start = CONTENT_IMAGE.rindex('/')
 OUTPUT_NAME = CONTENT_IMAGE[start+1:]
 OUTPUT_NAME = os.path.join('/kaggle/working/', OUTPUT_NAME)
@@ -20,7 +20,7 @@ def main():
     parser.add_argument('--weights', required=False,
                         default=WEIGHTS_PATH)
     parser.add_argument('--max_dim', required=False, type=int,
-                        default=1800)
+                        default=6000)
     parser.add_argument('--output', required=False,
                         default=OUTPUT_NAME)
 
