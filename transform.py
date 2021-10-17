@@ -5,7 +5,7 @@ from trans_net import feed_forward
 from utils import load_img, save_img
 import argparse
 
-CONTENT_IMAGE = './content/DSC01716.jpg'
+CONTENT_IMAGE = './content/great wall.jpg'
 WEIGHTS_PATH = './weights/wave/weights_wave'
 start = CONTENT_IMAGE.rindex('/')
 OUTPUT_NAME = CONTENT_IMAGE[start+1:]
