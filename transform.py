@@ -20,7 +20,7 @@ def main():
     parser.add_argument('--weights', required=False,
                         default=WEIGHTS_PATH)
     parser.add_argument('--max_dim', required=False, type=int,
-                        default=6000)
+                        default=1800)
     parser.add_argument('--output', required=False,
                         default=OUTPUT_NAME)
 
