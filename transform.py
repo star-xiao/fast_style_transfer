@@ -6,7 +6,7 @@ from utils import load_img, save_img
 import argparse
 
 CONTENT_IMAGE = './content/0912.jpg'
-WEIGHTS_PATH = './weights/starry night/weights'
+WEIGHTS_PATH = './weights/wave/weights_wave'
 start = CONTENT_IMAGE.rindex('/')
 OUTPUT_NAME = CONTENT_IMAGE[start+1:]
 OUTPUT_NAME = os.path.join('/kaggle/working/', OUTPUT_NAME)
