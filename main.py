@@ -4,14 +4,14 @@
 from train import trainer
 import argparse
 
-STYLE_IMAGE = './style/starry night.jpg'
+STYLE_IMAGE = './style/scream.jpg'
 DATASET_PATH = '/kaggle/input/coco2014/train2014/train2014'
 LOAD_WEIGHTS_PATH = './weights/starry night/weights_starry night'
-SAVE_WEIGHTS_PATH = '/kaggle/working/weights/starry night/weights_starry night'
+SAVE_WEIGHTS_PATH = '/kaggle/working/weights/scream/weights_scream'
 
 
-LEARNING_RATE = 0.0005
-NUM_EPOCHS = 1
+LEARNING_RATE = 0.001
+NUM_EPOCHS = 2
 BATCH_SIZE = 16
 
 CONTENT_WEIGHT = 6
