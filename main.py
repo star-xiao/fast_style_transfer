@@ -6,7 +6,7 @@ import argparse
 
 STYLE_IMAGE = './style/starry night.jpg'
 DATASET_PATH = '/kaggle/input/coco2014/train2014/train2014'
-LOAD_WEIGHTS_PATH = './weights/starry night/weights'
+LOAD_WEIGHTS_PATH = './weights/starry night/weights_starry night'
 SAVE_WEIGHTS_PATH = '/kaggle/working/weights/starry night/weights_starry night'
 
 
