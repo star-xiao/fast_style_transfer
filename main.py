@@ -4,14 +4,14 @@
 from train import trainer
 import argparse
 
-STYLE_IMAGE = './style/udnie.jpg'
+STYLE_IMAGE = './style/starry night.jpg'
 DATASET_PATH = '/kaggle/input/coco2014/train2014/train2014'
-LOAD_WEIGHTS_PATH = './weights/wave/weights_udnie'
-SAVE_WEIGHTS_PATH = '/kaggle/working/weights/udnie/weights_udnie'
+LOAD_WEIGHTS_PATH = './weights/starry night/weights'
+SAVE_WEIGHTS_PATH = '/kaggle/working/weights/starry night/weights_starry night'
 
 
-LEARNING_RATE = 0.001
-NUM_EPOCHS = 2
+LEARNING_RATE = 0.0005
+NUM_EPOCHS = 1
 BATCH_SIZE = 16
 
 CONTENT_WEIGHT = 6

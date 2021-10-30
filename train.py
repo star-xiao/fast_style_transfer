@@ -95,7 +95,7 @@ def trainer(style_image, dataset_path, weights_path, load_weights_path, content_
 
     network = feed_forward()
     # 若中断训练，可重新加载权重
-    # network.load_weights(load_weights_path).expect_partial()
+    network.load_weights(load_weights_path).expect_partial()
     extractor = StyleContent(style_layers, content_layers)
     style_image = load_img(style_image)
     style_target = extractor(style_image * 255.0)['style']
